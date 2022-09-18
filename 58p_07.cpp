@@ -1,12 +1,11 @@
 #include<iostream>
 using namespace std;
-
 int main()
 {
-    int speed = 60;
-    int time = 2.5;
+    int speed =60;
+    int time =2.5;
     int destance;
-    destance = speed / time;
-    cout << "ì´ë™í•œ ê±°ë¦¬ëŠ” " << destance << "ì…ë‹ˆë‹¤." << endl;
+    destance =speed /time;
+    cout <<"ÀÌµ¿ÇÑ °Å¸®´Â "<<destance <<"ÀÔ´Ï´Ù."<<endl;
     return 0;
 }
