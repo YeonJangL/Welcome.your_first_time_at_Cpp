@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
@@ -12,21 +13,17 @@ int main()
 
     for(int i = 0; i < password.length(); i++)
     {
-        if(password.at(i) >= '0' && password.at(i) <= '9')
+        if(password.at(i) >= '0' && password.at(i) <= '9' && num != true)
         {
             num = true;
         }
-        if(password.at(i) >= 'a' && password.at(i) <= 'z')
+        if(password.at(i) >= 'a' && password.at(i) <= 'z' && lower != true)
         {
             lower = true;
         }
-        if(password.at(i) >= 'A' && password.at(i) <= 'Z')
+        if(password.at(i) >= 'A' && password.at(i) <= 'Z' && upper != true)
         {
             upper = true;
-        }
-        if(num && lower && upper)
-        {
-            break;
         }
     }
     if(num && lower && upper)

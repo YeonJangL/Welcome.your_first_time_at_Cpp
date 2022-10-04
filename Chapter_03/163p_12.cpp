@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
@@ -12,12 +13,13 @@ int main()
     {
         counter[s[i]]++;
     }
-    for(i = 0; i < 256; i++)
+    for(i = 65; i < 91; i++)
     {
-        if(counter[i] != 0)
-        {
-            cout << char(i) << ": " << counter[i] << endl;
-        }
+        cout << char(i) << ": " << counter[i] << endl;
+    }
+    for(i = 97; i < 122; i++)
+    {
+        cout << char(i) << ": " << counter[i] << endl;
     }
     return 0;
 }
